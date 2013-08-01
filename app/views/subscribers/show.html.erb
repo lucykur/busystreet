@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Area:</b>
+  <%= @subscriber.area %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @subscriber.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_subscriber_path(@subscriber) %> |
+<%= link_to 'Back', subscribers_path %>
