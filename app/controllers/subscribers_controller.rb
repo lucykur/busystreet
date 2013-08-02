@@ -25,6 +25,7 @@ class SubscribersController < ApplicationController
   # GET /subscribers/new.json
   def new
     @subscriber = Subscriber.new
+    @areas = Area.all
 
     respond_to do |format|
       format.html # new.html.erb

@@ -12,8 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :area %><br />
-    <%= f.text_field :area %>
+    <%= select_tag 'area', options_for_select(@areas.map{|area| ["#{area.place} #{area.street}", area.id] }) %>
   </div>
   <div class="field">
     <%= f.label :phone %><br />
